@@ -8,17 +8,342 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=18">
 </head>
 <body>
-  <section class="hero">
-    <div class="hero-content">
-      <h1 class="wordmark">LEO</h1>
-      <p class="options-question">Het bestuur systeem van Ovalo.</p>
-      <nav class="options">
-        <a class="option-btn" href="index.html">&larr; Terug</a>
-      </nav>
+  <header class="site-header">
+    <a class="site-brand" href="index.html" aria-label="Ovalo home">
+      <img class="site-brand-logo" src="ovalo.png" alt="">
+      <span class="site-brand-name">OVALO</span>
+    </a>
+    <nav class="site-nav" aria-label="Hoofdmenu">
+      <a class="site-nav-link is-active" href="leo.html" aria-current="page">Bestuur systeem</a>
+      <a class="site-nav-link" href="eco-game.html">Interactief leren</a>
+      <a class="site-nav-link" href="boekai.html">Ondersteuning</a>
+    </nav>
+    <a class="site-cta" href="#demo">Demo aanvragen</a>
+  </header>
+
+  <section class="leo-hero">
+    <div class="leo-hero-inner">
+      <div class="leo-hero-copy">
+        <p class="leo-crumb">Bestuur systeem <span>/</span> LEO</p>
+        <div class="leo-brand">
+          <!-- Vervang dit blok door het LEO logo zodra je het bestand hebt: <img src="leo-logo.png" alt="LEO"> -->
+          <span class="leo-logo-mark" aria-hidden="true">L</span>
+          <span class="leo-brand-text"><strong>LEO</strong><small>Online leerplatform voor challenges</small></span>
+        </div>
+        <h1 class="leo-title">Leren dat verder gaat dan de lesstof.</h1>
+        <p class="leo-lead">Leerlingen werken zelfstandig of in groepjes aan uitdagende challenges. Coaches volgen de voortgang, delen groepen in en geven feedback. Alles in één omgeving.</p>
+        <div class="leo-actions">
+          <a class="leo-btn leo-btn-primary" href="#demo">Demo aanvragen</a>
+          <a class="leo-btn leo-btn-ghost" href="#hoe-het-werkt">Hoe het werkt</a>
+        </div>
+        <p class="leo-note"><span class="leo-dot"></span>Leerlingen loggen in met hun eigen schoolaccount</p>
+      </div>
+
+      <div class="coach-card" aria-hidden="true">
+        <div class="coach-bar"><i></i><i></i><i></i><span>LEO &middot; Coach-omgeving</span></div>
+        <div class="coach-body">
+          <ul class="coach-groups">
+            <li class="is-active">Klas 3B <b>4</b></li>
+            <li>Klas 3C <b>3</b></li>
+            <li>Klas 4A <b>4</b></li>
+            <li>Projectgroep <b>1</b></li>
+          </ul>
+          <div class="coach-main">
+            <div class="coach-head"><strong>Klas 3B</strong><span>Challenge: Pitch je idee</span></div>
+            <div class="coach-row"><em>NB</em><span>Noor Bakker</span><div class="bar"><div style="width:85%"></div></div><b class="tag tag-green">Klaar</b></div>
+            <div class="coach-row"><em>DV</em><span>Daan de Vries</span><div class="bar"><div style="width:60%"></div></div><b class="tag tag-blue">Bezig</b></div>
+            <div class="coach-row"><em>IA</em><span>Ilana El Amrani</span><div class="bar"><div style="width:40%"></div></div><b class="tag tag-orange">Hulp</b></div>
+            <div class="coach-row"><em>MJ</em><span>Milan Janssen</span><div class="bar"><div style="width:70%"></div></div><b class="tag tag-blue">Bezig</b></div>
+            <div class="coach-feedback"><small>FEEDBACK GEVEN</small>&ldquo;Denk eens aan jullie pitch. Kijk nog eens naar stap 3: wie is jullie doelgroep?&rdquo;</div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+
+  <section class="why-leo">
+    <div class="why-leo-inner">
+      <span class="why-leo-eyebrow">WAAROM LEO</span>
+      <h2 class="why-leo-title">Vaardigheden buiten het rooster verdienen ook structuur.</h2>
+      <div class="why-leo-grid">
+        <article class="why-leo-card">
+          <span class="why-leo-label">NU</span>
+          <p class="why-leo-now">Vaardigheden als samenwerken, presenteren en ondernemen vallen tussen de vakken in.</p>
+          <span class="why-leo-label why-leo-label-accent">MET LEO</span>
+          <p class="why-leo-with">Een vaste plek voor challenges die deze vaardigheden gericht oefenen.</p>
+        </article>
+        <article class="why-leo-card">
+          <span class="why-leo-label">NU</span>
+          <p class="why-leo-now">Coaches houden voortgang bij in losse lijstjes, mappen en mails.</p>
+          <span class="why-leo-label why-leo-label-accent">MET LEO</span>
+          <p class="why-leo-with">Eén overzicht per groep: wie is klaar, wie is bezig, wie heeft hulp nodig.</p>
+        </article>
+        <article class="why-leo-card">
+          <span class="why-leo-label">NU</span>
+          <p class="why-leo-now">Leerlingen krijgen pas feedback als het werk al af is.</p>
+          <span class="why-leo-label why-leo-label-accent">MET LEO</span>
+          <p class="why-leo-with">Feedback tijdens het proces, direct bij de opdracht.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="hoe-het-werkt">
+    <div class="how-inner">
+      <div class="how-copy">
+        <span class="how-eyebrow">HOE HET WERKT</span>
+        <h2 class="how-title">Twee omgevingen, één platform.</h2>
+
+        <div class="how-toggle" role="tablist" aria-label="Kies een omgeving">
+          <button class="how-toggle-btn is-active" type="button" role="tab" aria-selected="true" data-role="leerling">Leerling</button>
+          <button class="how-toggle-btn" type="button" role="tab" aria-selected="false" data-role="coach">Coach</button>
+        </div>
+
+        <ol class="how-steps" id="how-steps"></ol>
+      </div>
+
+      <div class="how-stage">
+        <div class="how-card" id="how-card" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="roles">
+    <div class="roles-inner">
+      <span class="roles-eyebrow">VOOR WIE</span>
+      <h2 class="roles-title">Eén platform. Drie rollen die er direct iets aan hebben.</h2>
+      <div class="roles-grid">
+        <article class="roles-col">
+          <h3 class="roles-name"><span>01</span>Schoolleiders</h3>
+          <ul>
+            <li>Zicht op hoe vaardigheden schoolbreed aan bod komen</li>
+            <li>Een aanvulling die past naast het bestaande programma</li>
+            <li>Snel te implementeren, klein te starten</li>
+          </ul>
+        </article>
+        <article class="roles-col">
+          <h3 class="roles-name"><span>02</span>Coaches</h3>
+          <ul>
+            <li>Groepen indelen en challenges toewijzen in minuten</li>
+            <li>Voortgang van alle leerlingen in één scherm</li>
+            <li>Feedback geven precies waar het nodig is</li>
+          </ul>
+        </article>
+        <article class="roles-col">
+          <h3 class="roles-name"><span>03</span>Bestuurders</h3>
+          <ul>
+            <li>Eén platform voor meerdere scholen binnen het bestuur</li>
+            <li>Veilig inloggen via bestaande schoolaccounts</li>
+            <li>Inzicht in gebruik en bereik per school</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="faq-inner">
+      <h2 class="faq-title">Veelgestelde vragen</h2>
+      <div class="faq-list">
+        <details class="faq-item" name="faq" open>
+          <summary>Hoe loggen leerlingen in?</summary>
+          <p>Leerlingen loggen in met hun bestaande schoolaccount. Er zijn geen aparte accounts of wachtwoorden nodig.</p>
+        </details>
+        <details class="faq-item" name="faq">
+          <summary>Past LEO naast ons bestaande lesprogramma?</summary>
+          <p>Ja. LEO is een aanvulling en vervangt niets. De challenges gaan over vaardigheden buiten de reguliere lesstof, dus uw rooster en methodes hoeven niet te veranderen.</p>
+        </details>
+        <details class="faq-item" name="faq">
+          <summary>Hoeveel tijd kost het coaches?</summary>
+          <p>Weinig. Groepen indelen en challenges toewijzen doet een coach in enkele minuten, de voortgang staat in één overzicht en feedback geeft u alleen waar dat nodig is.</p>
+        </details>
+        <details class="faq-item" name="faq">
+          <summary>Kunnen we klein beginnen?</summary>
+          <p>Zeker. U kunt starten met één klas of een enkele groep en later uitbreiden naar meer groepen of andere scholen binnen uw bestuur.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="demo" id="demo">
+    <div class="demo-inner">
+      <div class="demo-copy">
+        <span class="demo-eyebrow">DEMO AANVRAGEN</span>
+        <h2 class="demo-title">Zie LEO in actie op uw school.</h2>
+        <p class="demo-lead">In 30 minuten laten we de leerling- en coach-omgeving zien en bespreken we hoe LEO past bij uw team.</p>
+      </div>
+
+      <div class="demo-card">
+        <form class="demo-form" id="demo-form" novalidate>
+          <label class="demo-field"><span>Naam</span>
+            <input type="text" name="Naam" placeholder="Uw naam" autocomplete="name" required>
+          </label>
+          <label class="demo-field"><span>School</span>
+            <input type="text" name="School" placeholder="Naam van uw school" autocomplete="organization" required>
+          </label>
+          <label class="demo-field"><span>E-mailadres</span>
+            <input type="email" name="email" placeholder="naam@school.nl" autocomplete="email" required>
+          </label>
+          <label class="demo-field"><span>Telefoon</span>
+            <input type="tel" name="Telefoon" placeholder="Optioneel" autocomplete="tel">
+          </label>
+          <label class="demo-field"><span>Uw rol</span>
+            <select name="Rol">
+              <option>Schoolleider</option>
+              <option>Coach</option>
+              <option>Bestuurder</option>
+              <option>Anders</option>
+            </select>
+          </label>
+          <input type="text" name="botcheck" class="demo-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="demo-submit" type="submit">Demo aanvragen</button>
+          <p class="demo-status" id="demo-status" role="status" aria-live="polite"></p>
+        </form>
+        <div class="demo-success" id="demo-success" hidden>
+          <div class="demo-check" aria-hidden="true">&#10003;</div>
+          <h3>Bedankt voor uw aanvraag</h3>
+          <p>We nemen binnen één werkdag contact met u op om een moment voor de demo te plannen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    (function () {
+      // Gratis sleutel van https://web3forms.com (mail komt binnen op het adres waarmee je hem aanvraagt)
+      var ACCESS_KEY = 'ec61d246-643e-48ca-af76-3aacbaff61f1';
+      var form = document.getElementById('demo-form');
+      var statusEl = document.getElementById('demo-status');
+      var success = document.getElementById('demo-success');
+      var submit = form.querySelector('.demo-submit');
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        statusEl.className = 'demo-status';
+        statusEl.textContent = '';
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+        var payload = {};
+        new FormData(form).forEach(function (v, k) { payload[k] = v; });
+        if (payload.botcheck) return;
+        delete payload.botcheck;
+        payload.access_key = ACCESS_KEY;
+        payload.subject = 'Nieuwe demo-aanvraag LEO: ' + payload.School;
+        payload.from_name = 'Ovalo website';
+
+        submit.disabled = true;
+        submit.textContent = 'Versturen…';
+        fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(payload)
+        }).then(function (r) {
+          return r.json().then(function (j) { return { ok: r.ok && String(j.success) !== 'false', j: j }; });
+        }).then(function (res) {
+          if (!res.ok) throw new Error(res.j && res.j.message || 'Versturen mislukt');
+          form.hidden = true;
+          success.hidden = false;
+        }).catch(function () {
+          statusEl.className = 'demo-status is-error';
+          statusEl.innerHTML = 'Versturen is niet gelukt. Probeer het opnieuw of mail naar <a href="mailto:hallo@ovalo.nl?subject=Demo%20aanvragen">hallo@ovalo.nl</a>.';
+          submit.disabled = false;
+          submit.textContent = 'Demo aanvragen';
+        });
+      });
+    })();
+  </script>
+
+  <script>
+    (function () {
+      var DATA = {
+        leerling: {
+          steps: [
+            { t: 'Inloggen met schoolaccount', d: 'Geen extra wachtwoorden. Leerlingen starten direct met de challenges die voor hen klaarstaan.',
+              card: '<div class="hc-label">WELKOM TERUG</div><div class="hc-title">Jouw challenges</div>' +
+                '<div class="hc-item is-active"><i class="hc-dot hc-dot-blue"></i>Pitch je idee<span>Groep 3</span></div>' +
+                '<div class="hc-item"><i class="hc-dot"></i>Duurzame stad<span>Solo</span></div>' +
+                '<div class="hc-item"><i class="hc-dot hc-dot-green"></i>Debat<span>Allerhand</span></div>' +
+                '<div class="hc-note">Ingelogd via je schoolaccount.</div>' },
+            { t: 'Challenges doorlopen', d: 'Stap voor stap werken, alleen of samen, met overzicht van wat nog moet.',
+              card: '<div class="hc-label">CHALLENGE</div><div class="hc-title">Pitch je idee</div>' +
+                '<div class="hc-item"><i class="hc-dot hc-dot-green"></i>Kies je doelgroep<span>Klaar</span></div>' +
+                '<div class="hc-item is-active"><i class="hc-dot hc-dot-blue"></i>Schrijf je pitch<span>Bezig</span></div>' +
+                '<div class="hc-item"><i class="hc-dot"></i>Oefen met je groep<span>Nog niet</span></div>' +
+                '<div class="hc-progress"><div style="width:55%"></div></div><div class="hc-note">2 van 3 stappen</div>' },
+            { t: 'Feedback ontvangen', d: 'Je coach reageert tijdens het werk, direct bij de opdracht.',
+              card: '<div class="hc-label">FEEDBACK VAN JE COACH</div><div class="hc-title">Pitch je idee</div>' +
+                '<div class="hc-quote">&ldquo;Sterke start! Kijk nog eens naar stap 3: wie is jullie doelgroep?&rdquo;</div>' +
+                '<div class="hc-note">Reageer of pas je werk aan.</div>' }
+          ]
+        },
+        coach: {
+          steps: [
+            { t: 'Groepen indelen', d: 'Stel groepen samen per klas, project of niveau en wijs challenges toe met een paar klikken.',
+              card: '<div class="hc-label">GROEPEN</div><div class="hc-title">Klas 3B indelen</div>' +
+                '<div class="hc-item"><i class="hc-dot hc-dot-green"></i>Groep 1 &middot; Noor, Daan, Sara<span>3 leerlingen</span></div>' +
+                '<div class="hc-item"><i class="hc-dot hc-dot-green"></i>Groep 2 &middot; Milan, Finn<span>2 leerlingen</span></div>' +
+                '<div class="hc-item is-active"><i class="hc-dot hc-dot-blue"></i>Nog niet ingedeeld<span>4 leerlingen</span></div>' +
+                '<div class="hc-note">Wijs daarna een challenge toe aan elke groep.</div>' },
+            { t: 'Voortgang volgen', d: 'Eén overzicht per groep: wie is klaar, wie is bezig, wie heeft hulp nodig.',
+              card: '<div class="hc-label">KLAS 3B &middot; PITCH JE IDEE</div><div class="hc-title">Voortgang</div>' +
+                '<div class="hc-row"><span>Noor</span><div class="hc-bar"><div style="width:85%"></div></div><b class="hc-tag hc-tag-green">Klaar</b></div>' +
+                '<div class="hc-row"><span>Daan</span><div class="hc-bar"><div style="width:60%"></div></div><b class="hc-tag hc-tag-blue">Bezig</b></div>' +
+                '<div class="hc-row"><span>Ilana</span><div class="hc-bar"><div style="width:40%"></div></div><b class="hc-tag hc-tag-orange">Hulp</b></div>' +
+                '<div class="hc-row"><span>Milan</span><div class="hc-bar"><div style="width:70%"></div></div><b class="hc-tag hc-tag-blue">Bezig</b></div>' },
+            { t: 'Feedback geven', d: 'Reageer tijdens het proces, niet pas als het werk af is.',
+              card: '<div class="hc-label">FEEDBACK GEVEN &middot; ILANA</div><div class="hc-title">Pitch je idee</div>' +
+                '<div class="hc-quote">&ldquo;Denk eens aan jullie pitch. Kijk nog eens naar stap 3: wie is jullie doelgroep?&rdquo;</div>' +
+                '<div class="hc-note">Verstuur naar Ilana</div>' }
+          ]
+        }
+      };
+
+      var stepsEl = document.getElementById('how-steps');
+      var cardEl = document.getElementById('how-card');
+      var toggles = document.querySelectorAll('.how-toggle-btn');
+      var role = 'leerling', active = 0;
+
+      function render() {
+        var steps = DATA[role].steps;
+        stepsEl.innerHTML = '';
+        steps.forEach(function (s, i) {
+          var li = document.createElement('li');
+          li.className = 'how-step' + (i === active ? ' is-active' : '');
+          var btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'how-step-btn';
+          btn.setAttribute('aria-expanded', i === active ? 'true' : 'false');
+          btn.innerHTML = '<span class="how-step-num">' + (i + 1) + '</span><span class="how-step-body"><strong></strong><small></small></span>';
+          btn.querySelector('strong').textContent = s.t;
+          btn.querySelector('small').textContent = s.d;
+          btn.addEventListener('click', function () { active = i; render(); });
+          li.appendChild(btn);
+          stepsEl.appendChild(li);
+        });
+        cardEl.innerHTML = '<div class="hc-head"><span class="hc-logo">L</span>' +
+          (role === 'leerling' ? 'LEO<em>Noor &middot; 3B</em>' : 'LEO Coach') + '</div>' + steps[active].card;
+      }
+
+      toggles.forEach(function (b) {
+        b.addEventListener('click', function () {
+          role = b.getAttribute('data-role');
+          active = 0;
+          toggles.forEach(function (o) {
+            var on = o === b;
+            o.classList.toggle('is-active', on);
+            o.setAttribute('aria-selected', on ? 'true' : 'false');
+          });
+          render();
+        });
+      });
+
+      render();
+    })();
+  </script>
 </body>
 </html>
