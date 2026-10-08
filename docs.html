@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Docs | Ovalo</title>
+<link rel="icon" type="image/png" href="ovalo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=21">
+</head>
+<body class="docs-page">
+  <header class="docs-header">
+    <a class="docs-brand" href="index.html" aria-label="Ovalo home">ovalo</a>
+    <nav class="docs-nav" aria-label="Hoofdmenu">
+      <a class="docs-nav-link" href="index.html">Home</a>
+      <a class="docs-nav-link" href="index.html#producten">Producten</a>
+      <a class="docs-nav-link is-active" href="docs.html" aria-current="page">Docs</a>
+      <a class="docs-nav-link" href="mailto:hallo@ovalo.nl">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="docs-hero">
+      <span class="docs-eyebrow">OVALO &middot; KENNISBANK</span>
+      <h1 class="docs-hero-title">Alles over Ovalo</h1>
+      <p class="docs-hero-lead">Nieuws, verhalen uit de praktijk en documenten op één plek.</p>
+      <div class="docs-search" role="search">
+        <input class="docs-search-input" id="docs-search" type="search" placeholder="Zoek in nieuws, verhalen en documenten" aria-label="Zoek in nieuws, verhalen en documenten">
+      </div>
+    </section>
+
+    <section class="docs-browse" aria-label="Kennisbank">
+      <aside class="docs-filters" aria-label="Filters">
+        <p class="docs-filter-label">Type</p>
+        <div class="docs-filter-list">
+          <button class="docs-filter is-active" type="button" data-filter-type="alles" aria-pressed="true"><span>Alles</span><b class="docs-filter-count">12</b></button>
+          <button class="docs-filter" type="button" data-filter-type="nieuws" aria-pressed="false"><span>Nieuws</span><b class="docs-filter-count">4</b></button>
+          <button class="docs-filter" type="button" data-filter-type="verhaal" aria-pressed="false"><span>Verhalen</span><b class="docs-filter-count">3</b></button>
+          <button class="docs-filter" type="button" data-filter-type="document" aria-pressed="false"><span>Documenten</span><b class="docs-filter-count">5</b></button>
+        </div>
+
+        <p class="docs-filter-label docs-filter-label-product">Product</p>
+        <div class="docs-chips">
+          <button class="docs-chip" type="button" data-filter-product="leo" aria-pressed="false">LEO</button>
+          <button class="docs-chip" type="button" data-filter-product="ovalo" aria-pressed="false">Ovalo algemeen</button>
+        </div>
+      </aside>
+
+      <div class="docs-results">
+        <p class="docs-count" id="docs-count" aria-live="polite">12 resultaten</p>
+        <ul class="docs-list">
+          <li class="docs-item" data-type="nieuws" data-product="leo">
+            <span class="docs-badge docs-badge-nieuws">Nieuws</span>
+            <div class="docs-item-body">
+              <h2 class="docs-item-title">Nieuwe challenges voor het tweede schoolhalfjaar</h2>
+              <p class="docs-item-text">Een nieuwe reeks opdrachten, zelfstandig of in groepjes.</p>
+              <p class="docs-item-meta">LEO &middot; 2 oktober 2026</p>
+            </div>
+            <a class="docs-item-action" href="#" aria-label="Lees: Nieuwe challenges voor het tweede schoolhalfjaar">Lees <span aria-hidden="true">&rarr;</span></a>
+          </li>
+
+          <li class="docs-item" data-type="verhaal" data-product="leo">
+            <span class="docs-badge docs-badge-verhaal">Verhaal</span>
+            <div class="docs-item-body">
+              <h2 class="docs-item-title">Hoe een middelbare school LEO inzet in de onderbouw</h2>
+              <p class="docs-item-text">Een coördinator vertelt over het eerste jaar met LEO.</p>
+              <p class="docs-item-meta">Verhaal &middot; 5 min lezen</p>
+            </div>
+            <a class="docs-item-action" href="#" aria-label="Lees verhaal: Hoe een middelbare school LEO inzet in de onderbouw">Lees verhaal <span aria-hidden="true">&rarr;</span></a>
+          </li>
+
+          <li class="docs-item" data-type="document" data-product="leo">
+            <span class="docs-badge docs-badge-document">Document</span>
+            <div class="docs-item-body">
+              <h2 class="docs-item-title">LEO productbrochure</h2>
+              <p class="docs-item-text">Wat LEO is en hoe het werkt, in vier pagina&rsquo;s.</p>
+              <p class="docs-item-meta">PDF &middot; 2,4 MB</p>
+            </div>
+            <a class="docs-item-action" href="#" aria-label="Download PDF: LEO productbrochure">Download PDF</a>
+          </li>
+
+          <li class="docs-item" data-type="nieuws" data-product="leo">
+            <span class="docs-badge docs-badge-nieuws">Nieuws</span>
+            <div class="docs-item-body">
+              <h2 class="docs-item-title">Drie nieuwe scholen sluiten aan bij LEO</h2>
+              <p class="docs-item-text">Steeds meer scholen kiezen voor gamified leren.</p>
+              <p class="docs-item-meta">Scholen &middot; 24 sep 2026</p>
+            </div>
+            <a class="docs-item-action" href="#" aria-label="Lees: Drie nieuwe scholen sluiten aan bij LEO">Lees <span aria-hidden="true">&rarr;</span></a>
+          </li>
+
+          <li class="docs-item" data-type="document" data-product="leo">
+            <span class="docs-badge docs-badge-document">Document</span>
+            <div class="docs-item-body">
+              <h2 class="docs-item-title">Handleiding voor coaches</h2>
+              <p class="docs-item-text">Groepen indelen, voortgang volgen en feedback geven.</p>
+              <p class="docs-item-meta">PDF &middot; 1,1 MB</p>
+            </div>
+            <a class="docs-item-action" href="#" aria-label="Download PDF: Handleiding voor coaches">Download PDF</a>
+          </li>
+
+          <li class="docs-item" data-type="verhaal" data-product="leo">
+            <span class="docs-badge docs-badge-verhaal">Verhaal</span>
+            <div class="docs-item-body">
+              <h2 class="docs-item-title">Een dag als LEO-coach</h2>
+              <p class="docs-item-text">Hoe een docent leerlingen begeleidt bij hun challenges.</p>
+              <p class="docs-item-meta">Verhaal &middot; 4 min lezen</p>
+            </div>
+            <a class="docs-item-action" href="#" aria-label="Lees verhaal: Een dag als LEO-coach">Lees verhaal <span aria-hidden="true">&rarr;</span></a>
+          </li>
+
+          <li class="docs-item" data-type="nieuws" data-product="leo">
+            <span class="docs-badge docs-badge-nieuws">Nieuws</span>
+            <div class="docs-item-body">
+              <h2 class="docs-item-title">Vernieuwde coach-omgeving: sneller feedback geven</h2>
+              <p class="docs-item-text">Groepen indelen en voortgang volgen in minder stappen.</p>
+              <p class="docs-item-meta">Coaches &middot; 12 sep 2026</p>
+            </div>
+            <a class="docs-item-action" href="#" aria-label="Lees: Vernieuwde coach-omgeving: sneller feedback geven">Lees <span aria-hidden="true">&rarr;</span></a>
+          </li>
+
+          <li class="docs-item" data-type="document" data-product="leo">
+            <span class="docs-badge docs-badge-document">Document</span>
+            <div class="docs-item-body">
+              <h2 class="docs-item-title">Stappenplan: LEO invoeren op je school</h2>
+              <p class="docs-item-text">Van eerste gesprek tot de start met leerlingen.</p>
+              <p class="docs-item-meta">PDF &middot; 1,8 MB</p>
+            </div>
+            <a class="docs-item-action" href="#" aria-label="Download PDF: Stappenplan: LEO invoeren op je school">Download PDF</a>
+          </li>
+
+          <li class="docs-item" data-type="verhaal" data-product="leo">
+            <span class="docs-badge docs-badge-verhaal">Verhaal</span>
+            <div class="docs-item-body">
+              <h2 class="docs-item-title">Van toets naar challenge: een mentor aan het woord</h2>
+              <p class="docs-item-text">Wat verandert er als leerlingen zelf hun route kiezen?</p>
+              <p class="docs-item-meta">Verhaal &middot; 6 min lezen</p>
+            </div>
+            <a class="docs-item-action" href="#" aria-label="Lees verhaal: Van toets naar challenge: een mentor aan het woord">Lees verhaal <span aria-hidden="true">&rarr;</span></a>
+          </li>
+
+          <li class="docs-item" data-type="document" data-product="leo">
+            <span class="docs-badge docs-badge-document">Document</span>
+            <div class="docs-item-body">
+              <h2 class="docs-item-title">Veelgestelde vragen over LEO</h2>
+              <p class="docs-item-text">Antwoorden voor schoolleiders, coaches en leerlingen.</p>
+              <p class="docs-item-meta">PDF &middot; 0,6 MB</p>
+            </div>
+            <a class="docs-item-action" href="#" aria-label="Download PDF: Veelgestelde vragen over LEO">Download PDF</a>
+          </li>
+
+          <li class="docs-item" data-type="nieuws" data-product="ovalo">
+            <span class="docs-badge docs-badge-nieuws">Nieuws</span>
+            <div class="docs-item-body">
+              <h2 class="docs-item-title">Ovalo opent de kennisbank</h2>
+              <p class="docs-item-text">Nieuws, verhalen en documenten nu op één plek.</p>
+              <p class="docs-item-meta">Ovalo &middot; 5 sep 2026</p>
+            </div>
+            <a class="docs-item-action" href="#" aria-label="Lees: Ovalo opent de kennisbank">Lees <span aria-hidden="true">&rarr;</span></a>
+          </li>
+
+          <li class="docs-item" data-type="document" data-product="ovalo">
+            <span class="docs-badge docs-badge-document">Document</span>
+            <div class="docs-item-body">
+              <h2 class="docs-item-title">Ovalo in het kort</h2>
+              <p class="docs-item-text">Wie we zijn en voor welke scholen we software bouwen.</p>
+              <p class="docs-item-meta">PDF &middot; 0,7 MB</p>
+            </div>
+            <a class="docs-item-action" href="#" aria-label="Download PDF: Ovalo in het kort">Download PDF</a>
+          </li>
+        </ul>
+        <p class="docs-empty" id="docs-empty" hidden>Geen resultaten gevonden. Probeer een andere zoekterm of filter.</p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      var items = Array.prototype.slice.call(document.querySelectorAll('.docs-item'));
+      var typeButtons = Array.prototype.slice.call(document.querySelectorAll('[data-filter-type]'));
+      var productButtons = Array.prototype.slice.call(document.querySelectorAll('[data-filter-product]'));
+      var search = document.getElementById('docs-search');
+      var countEl = document.getElementById('docs-count');
+      var emptyEl = document.getElementById('docs-empty');
+      var state = { type: 'alles', product: '', query: '' };
+
+      // De type-tellers negeren het gekozen type, zodat je ziet wat elk type oplevert.
+      function matches(item, ignoreType) {
+        if (!ignoreType && state.type !== 'alles' && item.dataset.type !== state.type) return false;
+        if (state.product && item.dataset.product !== state.product) return false;
+        if (state.query && item.querySelector('.docs-item-body').textContent.toLowerCase().indexOf(state.query) === -1) return false;
+        return true;
+      }
+
+      function render() {
+        var shown = 0;
+        items.forEach(function (item) {
+          var visible = matches(item, false);
+          item.hidden = !visible;
+          if (visible) shown++;
+        });
+
+        typeButtons.forEach(function (button) {
+          var type = button.dataset.filterType;
+          var count = items.filter(function (item) {
+            return matches(item, true) && (type === 'alles' || item.dataset.type === type);
+          }).length;
+          button.querySelector('.docs-filter-count').textContent = count;
+        });
+
+        countEl.textContent = shown + (shown === 1 ? ' resultaat' : ' resultaten');
+        emptyEl.hidden = shown !== 0;
+      }
+
+      typeButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          state.type = button.dataset.filterType;
+          typeButtons.forEach(function (other) {
+            var active = other === button;
+            other.classList.toggle('is-active', active);
+            other.setAttribute('aria-pressed', active);
+          });
+          render();
+        });
+      });
+
+      productButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          var turnOn = state.product !== button.dataset.filterProduct;
+          state.product = turnOn ? button.dataset.filterProduct : '';
+          productButtons.forEach(function (other) {
+            var active = turnOn && other === button;
+            other.classList.toggle('is-active', active);
+            other.setAttribute('aria-pressed', active);
+          });
+          render();
+        });
+      });
+
+      search.addEventListener('input', function () {
+        state.query = search.value.trim().toLowerCase();
+        render();
+      });
+    })();
+  </script>
+</body>
+</html>
