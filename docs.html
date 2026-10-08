@@ -151,14 +151,14 @@
             <a class="docs-item-action" href="#" aria-label="Download PDF: Veelgestelde vragen over LEO">Download PDF</a>
           </li>
 
-          <li class="docs-item" data-type="nieuws" data-product="ovalo">
+          <li class="docs-item" data-type="nieuws" data-product="leo">
             <span class="docs-badge docs-badge-nieuws">Nieuws</span>
             <div class="docs-item-body">
-              <h2 class="docs-item-title">Ovalo opent de kennisbank</h2>
-              <p class="docs-item-text">Nieuws, verhalen en documenten nu op één plek.</p>
-              <p class="docs-item-meta">Ovalo &middot; 5 sep 2026</p>
+              <h2 class="docs-item-title">Terugblik op de LEO-kickoff</h2>
+              <p class="docs-item-text">Leerlingen, coaches en scholen kwamen samen voor de start van het jaar.</p>
+              <p class="docs-item-meta">Evenement &middot; 30 aug 2026</p>
             </div>
-            <a class="docs-item-action" href="#" aria-label="Lees: Ovalo opent de kennisbank">Lees <span aria-hidden="true">&rarr;</span></a>
+            <a class="docs-item-action" href="#" aria-label="Lees: Terugblik op de LEO-kickoff">Lees <span aria-hidden="true">&rarr;</span></a>
           </li>
 
           <li class="docs-item" data-type="document" data-product="ovalo">
@@ -243,6 +243,12 @@
         state.query = search.value.trim().toLowerCase();
         render();
       });
+
+      // docs.html#nieuws (of #verhaal, #document) opent met dat type al gekozen
+      var preset = typeButtons.filter(function (button) {
+        return button.dataset.filterType === location.hash.slice(1);
+      })[0];
+      if (preset) preset.click();
     })();
   </script>
 </body>
