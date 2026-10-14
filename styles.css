@@ -47,7 +47,14 @@ body {
   display: block;
   width: min(220px, 55vw);
   height: auto;
-  margin-bottom: -12px;
+  /* ovalo.png heeft ~19% lege ruimte onder de driehoeken; die trekken we weg zodat het logo tegen het woord aan staat */
+  margin-bottom: calc(min(220px, 55vw) * -0.2);
+}
+
+/* Geen extra regelruimte boven de letters als het woord direct onder het logo staat */
+.logo + .wordmark {
+  line-height: 1;
+  margin-bottom: 0.3em; /* ruimte onder het woord blijft gelijk aan voorheen */
 }
 
 .wordmark {
