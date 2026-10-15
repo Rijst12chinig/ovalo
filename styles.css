@@ -828,6 +828,7 @@ body {
   font-size: 0.85rem;
   font-weight: 600;
   text-decoration: none;
+  white-space: nowrap;
   opacity: 0.8;
   transition: opacity 0.2s ease;
 }
@@ -868,7 +869,8 @@ body {
   border-color: #6699EA;
 }
 
-@media (max-width: 820px) {
+/* Met zes menu-items past de nav pas naast logo en knop vanaf ~1180px; daaronder eronder */
+@media (max-width: 1180px) {
   .site-header {
     grid-template-columns: 1fr auto;
   }
@@ -878,6 +880,9 @@ body {
     justify-content: center;
     flex-wrap: wrap;
   }
+}
+
+@media (max-width: 820px) {
   .hero-with-header {
     height: auto;
     min-height: calc(100vh - 120px);
@@ -888,6 +893,13 @@ body {
 .docs-page {
   background: #ffffff;
   color: #0D1220;
+}
+
+/* Voor wie: foto als achtergrond met een witte laag voor leesbaarheid (vast aan het scherm, zoals ECO/BoekAI) */
+.docs-page.voorwie-page {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)) fixed,
+    url("meisje.webp") fixed center / cover no-repeat #ffffff;
 }
 
 .docs-header {
@@ -921,6 +933,7 @@ body {
   font-size: 0.8rem;
   font-weight: 600;
   text-decoration: none;
+  white-space: nowrap;
   transition: color 0.2s ease;
 }
 
@@ -1258,10 +1271,16 @@ body {
   }
 }
 
-@media (max-width: 460px) {
+/* Zes menu-items passen naast het logo tot ~600px; daaronder gaat de nav onder het logo en breekt zo nodig af */
+@media (max-width: 600px) {
   .docs-header {
     flex-wrap: wrap;
     row-gap: 12px;
+  }
+
+  .docs-nav {
+    flex-wrap: wrap;
+    gap: 8px 20px;
   }
 }
 
