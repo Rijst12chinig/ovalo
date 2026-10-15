@@ -14,24 +14,26 @@ body {
   background: #000000;
 }
 
-/* ECO Game: foto als achtergrond met donkere laag voor leesbaarheid */
+/* ECO Game: foto als achtergrond met donkere laag voor leesbaarheid.
+   De achtergronden van deze drie pagina's staan vast aan het scherm (fixed), zodat de
+   footer onder de hero de uitsnede van de foto niet verandert. */
 .eco-page {
   background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("eco.jpg") center / cover no-repeat #000000;
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) fixed,
+    url("eco.jpg") fixed center / cover no-repeat #000000;
 }
 
 /* BoekAI: zelfde opzet als ECO Game, met de boekenkast-foto */
 .boek-page {
   background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("boek.jpg") center / cover no-repeat #000000;
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) fixed,
+    url("boek.jpg") fixed center / cover no-repeat #000000;
 }
 
 /* Ovalo Advies: nog geen eigen foto, dus een effen marineblauwe achtergrond */
 .advies-page {
   background:
-    radial-gradient(ellipse at 50% 35%, #16305C 0%, #0C1D38 60%, #060F1F 100%) #0C1D38;
+    radial-gradient(ellipse at 50% 35%, #16305C 0%, #0C1D38 60%, #060F1F 100%) fixed #0C1D38;
 }
 
 /* Klein "OVALO"-merk linksboven in de hero */
@@ -467,20 +469,20 @@ body {
   margin-top: 32px;
   padding: 20px 40px;
   border-radius: 999px;
-  background: #34E3DD;
+  background: #4A8BE8;
   color: #ffffff;
   font-size: 1.1rem;
   font-weight: 700;
   line-height: 1.2;
   text-decoration: none;
-  box-shadow: 8px 12px 28px rgba(110, 130, 255, 0.35);
+  box-shadow: 8px 12px 28px rgba(74, 139, 232, 0.35);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .product-cta:hover,
 .product-cta:focus-visible {
   transform: translateY(-2px);
-  box-shadow: 8px 16px 32px rgba(110, 130, 255, 0.45);
+  box-shadow: 8px 16px 32px rgba(74, 139, 232, 0.45);
 }
 
 @media (max-width: 900px) {
