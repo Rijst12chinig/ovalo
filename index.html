@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=31">
+<link rel="stylesheet" href="styles.css?v=32">
 </head>
 <body>
   <video class="bg-video" autoplay muted loop playsinline preload="auto" poster="ovalo.png">
@@ -89,9 +89,24 @@
           <span class="news-eyebrow">OVALO &middot; NIEUWS</span>
           <h2 class="news-title">Laatste nieuws</h2>
         </div>
+        <a class="news-all" href="docs.html#nieuws">Alle nieuws <span aria-hidden="true">&rarr;</span></a>
       </div>
 
-      <p class="news-empty">Er is nog geen nieuws. Kom later nog eens terug.</p>
+      <ul class="news-list">
+        <li>
+          <a class="news-item" href="nieuws-ai-op-school.html">
+            <span class="news-meta">
+              <span class="news-cat">Nieuws</span>
+              <time class="news-date" datetime="2026-10-15">15 oktober 2026</time>
+            </span>
+            <span class="news-body">
+              <h3 class="news-item-title">AI op school: leren of cijfers halen?</h3>
+              <p class="news-item-text">Leerlingen gebruiken AI niet om vals te spelen. Ze gebruiken het om cijfers te halen.</p>
+            </span>
+            <span class="news-arrow" aria-hidden="true">&rarr;</span>
+          </a>
+        </li>
+      </ul>
     </div>
   </section>
 

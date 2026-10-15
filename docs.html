@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=31">
+<link rel="stylesheet" href="styles.css?v=32">
 </head>
 <body class="docs-page">
   <header class="docs-header">
@@ -35,8 +35,8 @@
       <aside class="docs-filters" aria-label="Filters">
         <p class="docs-filter-label">Type</p>
         <div class="docs-filter-list">
-          <button class="docs-filter is-active" type="button" data-filter-type="alles" aria-pressed="true"><span>Alles</span><b class="docs-filter-count">8</b></button>
-          <button class="docs-filter" type="button" data-filter-type="nieuws" aria-pressed="false"><span>Nieuws</span><b class="docs-filter-count">0</b></button>
+          <button class="docs-filter is-active" type="button" data-filter-type="alles" aria-pressed="true"><span>Alles</span><b class="docs-filter-count">9</b></button>
+          <button class="docs-filter" type="button" data-filter-type="nieuws" aria-pressed="false"><span>Nieuws</span><b class="docs-filter-count">1</b></button>
           <button class="docs-filter" type="button" data-filter-type="verhaal" aria-pressed="false"><span>Verhalen</span><b class="docs-filter-count">3</b></button>
           <button class="docs-filter" type="button" data-filter-type="document" aria-pressed="false"><span>Documenten</span><b class="docs-filter-count">5</b></button>
         </div>
@@ -49,8 +49,18 @@
       </aside>
 
       <div class="docs-results">
-        <p class="docs-count" id="docs-count" aria-live="polite">8 resultaten</p>
+        <p class="docs-count" id="docs-count" aria-live="polite">9 resultaten</p>
         <ul class="docs-list">
+          <li class="docs-item" data-type="nieuws" data-product="ovalo">
+            <span class="docs-badge docs-badge-nieuws">Nieuws</span>
+            <div class="docs-item-body">
+              <h2 class="docs-item-title">AI op school: leren of cijfers halen?</h2>
+              <p class="docs-item-text">Leerlingen gebruiken AI niet om vals te spelen. Ze gebruiken het om cijfers te halen.</p>
+              <p class="docs-item-meta">Nieuws &middot; 15 oktober 2026 &middot; 2 min lezen</p>
+            </div>
+            <a class="docs-item-action" href="nieuws-ai-op-school.html" aria-label="Lees bericht: AI op school: leren of cijfers halen?">Lees bericht <span aria-hidden="true">&rarr;</span></a>
+          </li>
+
           <li class="docs-item" data-type="verhaal" data-product="leo">
             <span class="docs-badge docs-badge-verhaal">Verhaal</span>
             <div class="docs-item-body">

@@ -1649,3 +1649,65 @@ a.contact-value:focus-visible {
 .about-cta {
   padding-bottom: clamp(56px, 10vh, 112px);
 }
+
+/* Nieuwsartikel */
+.article {
+  padding: clamp(32px, 6vh, 64px) var(--page-gutter) clamp(56px, 10vh, 112px);
+}
+
+.article-back {
+  display: inline-block;
+  margin-bottom: clamp(24px, 4vh, 40px);
+  color: #2563EB;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.article-back:hover,
+.article-back:focus-visible {
+  text-decoration: underline;
+}
+
+.article-title {
+  max-width: 20ch;
+  margin-bottom: 16px;
+  color: #0D1220;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+}
+
+.article-meta {
+  margin-bottom: clamp(32px, 6vh, 56px);
+  color: #5B6B8A;
+  font-size: 0.85rem;
+}
+
+.article-body {
+  max-width: 680px;
+}
+
+.article-body p {
+  margin-bottom: 1.2em;
+  color: #1F2937;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.article-body .article-lead {
+  color: #10233F;
+  font-size: clamp(1.2rem, 2.6vw, 1.45rem);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.article-body h2 {
+  margin: 2em 0 0.6em;
+  color: #10233F;
+  font-size: clamp(1.3rem, 3vw, 1.65rem);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+}
