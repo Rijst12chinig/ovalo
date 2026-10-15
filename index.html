@@ -16,6 +16,17 @@
     <source src="video.mov" type="video/quicktime">
   </video>
   <div class="video-overlay"></div>
+
+  <header class="docs-header docs-header-reveal" id="site-header">
+    <a class="docs-brand" href="#" aria-label="Ovalo, naar boven">ovalo</a>
+    <nav class="docs-nav" aria-label="Hoofdmenu">
+      <a class="docs-nav-link is-active" href="#" data-nav="home" aria-current="location">Home</a>
+      <a class="docs-nav-link" href="#producten" data-nav="producten">Producten</a>
+      <a class="docs-nav-link" href="docs.html">Docs</a>
+      <a class="docs-nav-link" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
   <section class="hero">
     <div class="hero-content">
       <img class="logo" src="ovalo.png" alt="Ovalo logo">
@@ -46,17 +57,25 @@
 
   <section class="products" id="producten">
     <div class="products-inner">
+      <span class="products-eyebrow">OVALO &middot; PRODUCTEN</span>
       <h2 class="products-title">Onze producten</h2>
       <div class="products-grid">
         <div class="product-item">
-          <a class="product-card" href="leo.html">
-            <h3 class="product-name">Het LEO programma</h3>
-            <img class="product-image" src="leo-card.webp" alt="LEO programma">
-          </a>
-          <p class="product-text">LEO is een online leerplatform waarmee scholieren op een leuke, uitdagende manier werken aan vaardigheden buiten de reguliere lesstof — denk aan challenges en opdrachten die leerlingen zelfstandig of in groepjes doorlopen.</p>
-          <p class="product-text">Coaches (docenten of begeleiders) volgen de voortgang van hun leerlingen, delen groepen in en geven feedback via een coach-omgeving.</p>
-          <p class="product-text">Leerlingen loggen in met hun schoolaccount (bijvoorbeeld via Entree) en zien een overzicht van hun challenges, voortgang en behaalde resultaten. Het platform is gekoppeld aan scholen, zodat leerlingen en coaches automatisch bij de juiste school en groepen terechtkomen.</p>
-          <p class="product-text">Kort gezegd: LEO combineert gamified leren met begeleiding door coaches, binnen een beveiligde omgeving die per school is ingericht.</p>
+          <div class="product-card">
+            <div class="product-visual">
+              <div class="product-frame">
+                <img class="product-image" src="leo-card.webp" alt="LEO programma">
+              </div>
+              <span class="product-badge">Voor leerling en coach</span>
+            </div>
+          </div>
+          <div class="product-copy">
+            <span class="product-eyebrow">HET LEO PROGRAMMA</span>
+            <p class="product-text">LEO is een online leerplatform waarmee scholieren op een leuke, uitdagende manier werken aan vaardigheden buiten de lesstof, met challenges en opdrachten.</p>
+            <p class="product-text">Coaches volgen de voortgang, delen groepen in en geven feedback. Leerlingen loggen in met hun schoolaccount, bijvoorbeeld via Entree.</p>
+            <p class="product-text product-text-strong">Kort gezegd: gamified leren met begeleiding door coaches, binnen een beveiligde omgeving per school.</p>
+            <a class="product-cta" href="leo.html">Bekijk het LEO programma <span aria-hidden="true">&rarr;</span></a>
+          </div>
         </div>
       </div>
     </div>
@@ -69,51 +88,9 @@
           <span class="news-eyebrow">OVALO &middot; NIEUWS</span>
           <h2 class="news-title">Laatste nieuws</h2>
         </div>
-        <a class="news-all" href="docs.html#nieuws">Alle berichten <span aria-hidden="true">&rarr;</span></a>
       </div>
 
-      <ul class="news-list">
-        <li>
-          <a class="news-item" href="docs.html#nieuws">
-            <span class="news-meta"><span class="news-cat">LEO</span><time class="news-date" datetime="2026-10-02">2 oktober 2026</time></span>
-            <span class="news-body">
-              <strong class="news-item-title">Nieuwe challenges voor het tweede schoolhalfjaar</strong>
-              <span class="news-item-text">Leerlingen kunnen vanaf nu aan de slag met een nieuwe reeks opdrachten, zelfstandig of in groepjes.</span>
-            </span>
-            <span class="news-arrow" aria-hidden="true">&rarr;</span>
-          </a>
-        </li>
-        <li>
-          <a class="news-item" href="docs.html#nieuws">
-            <span class="news-meta"><span class="news-cat">Scholen</span><time class="news-date" datetime="2026-09-24">24 sep 2026</time></span>
-            <span class="news-body">
-              <strong class="news-item-title">Drie nieuwe scholen sluiten aan bij LEO</strong>
-              <span class="news-item-text">Steeds meer scholen kiezen voor gamified leren met begeleiding.</span>
-            </span>
-            <span class="news-arrow" aria-hidden="true">&rarr;</span>
-          </a>
-        </li>
-        <li>
-          <a class="news-item" href="docs.html#nieuws">
-            <span class="news-meta"><span class="news-cat">Coaches</span><time class="news-date" datetime="2026-09-12">12 sep 2026</time></span>
-            <span class="news-body">
-              <strong class="news-item-title">Vernieuwde coach-omgeving: sneller feedback geven</strong>
-              <span class="news-item-text">Groepen indelen en voortgang volgen gaat nu in minder stappen.</span>
-            </span>
-            <span class="news-arrow" aria-hidden="true">&rarr;</span>
-          </a>
-        </li>
-        <li>
-          <a class="news-item" href="docs.html#nieuws">
-            <span class="news-meta"><span class="news-cat">Evenement</span><time class="news-date" datetime="2026-08-30">30 aug 2026</time></span>
-            <span class="news-body">
-              <strong class="news-item-title">Terugblik op de LEO-kickoff</strong>
-              <span class="news-item-text">Leerlingen, coaches en scholen kwamen samen voor de start van het jaar.</span>
-            </span>
-            <span class="news-arrow" aria-hidden="true">&rarr;</span>
-          </a>
-        </li>
-      </ul>
+      <p class="news-empty">Er is nog geen nieuws. Kom later nog eens terug.</p>
     </div>
   </section>
 
@@ -131,25 +108,25 @@
             <li><a href="leo.html">LEO</a></li>
             <li><a href="eco-game.html">ECO Game</a></li>
             <li><a href="boekai.html">BoekAI</a></li>
-            <li><a href="#">Ovalo Advies</a></li>
+            <li><a href="advies.html">Ovalo Advies</a></li>
           </ul>
         </nav>
 
         <nav class="footer-col" aria-label="Ovalo">
           <h2 class="footer-heading">Ovalo</h2>
           <ul>
-            <li><a href="#">Over ons</a></li>
-            <li><a href="#">Voor wie</a></li>
-            <li><a href="#">Werken bij</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="docs.html">Docs</a></li>
+            <li><a href="over-ons.html">Over ons</a></li>
+            <li><a href="voor-wie.html">Voor wie</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
 
         <nav class="footer-col" aria-label="Contact">
-            <li><a href="docs.html">Docs</a></li>
           <h2 class="footer-heading">Contact</h2>
           <ul>
-            <li><a href="mailto:hallo@ovalo.nl">hallo@ovalo.nl</a></li>
+            <li><a href="mailto:info@ovalo.digital">info@ovalo.digital</a></li>
+            <li><a href="tel:+31629772049">0629772049</a></li>
             <li><span>Nederland</span></li>
           </ul>
         </nav>
@@ -161,5 +138,39 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    // Header verschijnt zodra de hero voorbij is; Home/Producten volgen waar je op de pagina bent
+    (function () {
+      var header = document.getElementById('site-header');
+      var hero = document.querySelector('.hero');
+      var products = document.getElementById('producten');
+      var links = {
+        home: header.querySelector('[data-nav="home"]'),
+        producten: header.querySelector('[data-nav="producten"]')
+      };
+
+      function setActive(name) {
+        Object.keys(links).forEach(function (key) {
+          var on = key === name;
+          links[key].classList.toggle('is-active', on);
+          if (on) {
+            links[key].setAttribute('aria-current', 'location');
+          } else {
+            links[key].removeAttribute('aria-current');
+          }
+        });
+      }
+
+      function update() {
+        header.classList.toggle('is-visible', hero.getBoundingClientRect().bottom <= 0);
+        setActive(products.getBoundingClientRect().top <= window.innerHeight * 0.4 ? 'producten' : 'home');
+      }
+
+      window.addEventListener('scroll', update, { passive: true });
+      window.addEventListener('resize', update);
+      update();
+    })();
+  </script>
 </body>
 </html>

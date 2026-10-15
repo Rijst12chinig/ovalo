@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Ovalo</title>
+<link rel="icon" type="image/png" href="ovalo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=27">
+</head>
+<body class="docs-page">
+  <header class="docs-header">
+    <a class="docs-brand" href="index.html" aria-label="Ovalo home">ovalo</a>
+    <nav class="docs-nav" aria-label="Hoofdmenu">
+      <a class="docs-nav-link" href="index.html">Home</a>
+      <a class="docs-nav-link" href="index.html#producten">Producten</a>
+      <a class="docs-nav-link" href="docs.html">Docs</a>
+      <a class="docs-nav-link is-active" href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="docs-hero contact-hero">
+      <span class="docs-eyebrow">OVALO &middot; CONTACT</span>
+      <h1 class="docs-hero-title">Neem contact op</h1>
+      <p class="docs-hero-lead">Een vraag over onze producten, een demo of samenwerking? Laat een bericht achter, dan reageren we binnen één werkdag.</p>
+    </section>
+
+    <section class="contact-layout" aria-label="Contact">
+      <div class="contact-info">
+        <div class="contact-block">
+          <span class="contact-label">E-mail</span>
+          <a class="contact-value" href="mailto:info@ovalo.digital">info@ovalo.digital</a>
+        </div>
+        <div class="contact-block">
+          <span class="contact-label">Telefoon</span>
+          <a class="contact-value" href="tel:+31629772049">0629772049</a>
+        </div>
+        <div class="contact-block">
+          <span class="contact-label">Reactietijd</span>
+          <span class="contact-value">Binnen één werkdag</span>
+        </div>
+        <div class="contact-block">
+          <span class="contact-label">Locatie</span>
+          <span class="contact-value">Nederland</span>
+        </div>
+        <div class="contact-block">
+          <span class="contact-label">Wilt u LEO zien?</span>
+          <a class="contact-value" href="leo.html#demo">Vraag een demo aan <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <form class="contact-form" id="contact-form" novalidate>
+          <label class="demo-field"><span>Naam</span>
+            <input type="text" name="Naam" placeholder="Uw naam" autocomplete="name" required>
+          </label>
+          <label class="demo-field"><span>E-mailadres</span>
+            <input type="email" name="email" placeholder="naam@school.nl" autocomplete="email" required>
+          </label>
+          <label class="demo-field"><span>School</span>
+            <input type="text" name="School" placeholder="Optioneel" autocomplete="organization">
+          </label>
+          <label class="demo-field"><span>Waar gaat uw vraag over?</span>
+            <select name="Onderwerp">
+              <option>LEO</option>
+              <option>ECO Game</option>
+              <option>BoekAI</option>
+              <option>Ovalo Advies</option>
+              <option>Anders</option>
+            </select>
+          </label>
+          <label class="demo-field"><span>Bericht</span>
+            <textarea name="Bericht" rows="6" placeholder="Waarmee kunnen we u helpen?" required></textarea>
+          </label>
+          <input type="text" name="botcheck" class="demo-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="demo-submit" type="submit">Verstuur bericht</button>
+          <p class="demo-status" id="contact-status" role="status" aria-live="polite"></p>
+        </form>
+        <div class="demo-success" id="contact-success" hidden>
+          <div class="demo-check" aria-hidden="true">&#10003;</div>
+          <h3>Bedankt voor uw bericht</h3>
+          <p>We nemen binnen één werkdag contact met u op.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      // Zelfde Web3Forms-sleutel als het demo-formulier op leo.html
+      var ACCESS_KEY = 'ec61d246-643e-48ca-af76-3aacbaff61f1';
+      var form = document.getElementById('contact-form');
+      var statusEl = document.getElementById('contact-status');
+      var success = document.getElementById('contact-success');
+      var submit = form.querySelector('.demo-submit');
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        statusEl.className = 'demo-status';
+        statusEl.textContent = '';
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+        var payload = {};
+        new FormData(form).forEach(function (v, k) { payload[k] = v; });
+        if (payload.botcheck) return;
+        delete payload.botcheck;
+        payload.access_key = ACCESS_KEY;
+        payload.subject = 'Nieuw contactbericht van ' + payload.Naam + ' (' + payload.Onderwerp + ')';
+        payload.from_name = 'Ovalo website';
+
+        submit.disabled = true;
+        submit.textContent = 'Versturen…';
+        fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(payload)
+        }).then(function (r) {
+          return r.json().then(function (j) { return { ok: r.ok && String(j.success) !== 'false', j: j }; });
+        }).then(function (res) {
+          if (!res.ok) throw new Error(res.j && res.j.message || 'Versturen mislukt');
+          form.hidden = true;
+          success.hidden = false;
+        }).catch(function () {
+          statusEl.className = 'demo-status is-error';
+          statusEl.innerHTML = 'Versturen is niet gelukt. Probeer het opnieuw of mail naar <a href="mailto:info@ovalo.digital">info@ovalo.digital</a>.';
+          submit.disabled = false;
+          submit.textContent = 'Verstuur bericht';
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
