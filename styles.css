@@ -1711,3 +1711,15 @@ a.contact-value:focus-visible {
   letter-spacing: -0.01em;
   line-height: 1.25;
 }
+
+/* Over ons: foto als achtergrond met een witte laag voor leesbaarheid */
+.about-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)),
+    url("desk.webp") center / cover no-repeat;
+  pointer-events: none;
+}
