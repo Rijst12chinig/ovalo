@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=34">
+<link rel="stylesheet" href="styles.css?v=35">
 </head>
 <body>
   <header class="site-header">
@@ -91,7 +91,7 @@
       </div>
 
       <div class="how-stage">
-        <div class="how-card" id="how-card" aria-live="polite"></div>
+        <img class="how-shot" id="how-shot" src="leerling.png" width="1860" height="1668" alt="LEO-dashboard met de challenges van een leerling">
       </div>
     </div>
   </section>
@@ -292,51 +292,30 @@
     (function () {
       var DATA = {
         leerling: {
+          image: 'leerling.png',
+          alt: 'LEO-dashboard met de challenges van een leerling',
           steps: [
-            { t: 'Inloggen met schoolaccount', d: 'Geen extra wachtwoorden. Leerlingen starten direct met de challenges die voor hen klaarstaan.',
-              card: '<div class="hc-label">WELKOM TERUG</div><div class="hc-title">Jouw challenges</div>' +
-                '<div class="hc-item is-active"><i class="hc-dot hc-dot-blue"></i>Pitch je idee<span>Groep 3</span></div>' +
-                '<div class="hc-item"><i class="hc-dot"></i>Duurzame stad<span>Solo</span></div>' +
-                '<div class="hc-item"><i class="hc-dot hc-dot-green"></i>Debat<span>Allerhand</span></div>' +
-                '<div class="hc-note">Ingelogd via je schoolaccount.</div>' },
-            { t: 'Challenges doorlopen', d: 'Stap voor stap werken, alleen of samen, met overzicht van wat nog moet.',
-              card: '<div class="hc-label">CHALLENGE</div><div class="hc-title">Pitch je idee</div>' +
-                '<div class="hc-item"><i class="hc-dot hc-dot-green"></i>Kies je doelgroep<span>Klaar</span></div>' +
-                '<div class="hc-item is-active"><i class="hc-dot hc-dot-blue"></i>Schrijf je pitch<span>Bezig</span></div>' +
-                '<div class="hc-item"><i class="hc-dot"></i>Oefen met je groep<span>Nog niet</span></div>' +
-                '<div class="hc-progress"><div style="width:55%"></div></div><div class="hc-note">2 van 3 stappen</div>' },
-            { t: 'Feedback ontvangen', d: 'Je coach reageert tijdens het werk, direct bij de opdracht.',
-              card: '<div class="hc-label">FEEDBACK VAN JE COACH</div><div class="hc-title">Pitch je idee</div>' +
-                '<div class="hc-quote">&ldquo;Sterke start! Kijk nog eens naar stap 3: wie is jullie doelgroep?&rdquo;</div>' +
-                '<div class="hc-note">Reageer of pas je werk aan.</div>' }
+            { t: 'Inloggen met schoolaccount', d: 'Geen extra wachtwoorden. Leerlingen starten direct met de challenges die voor hen klaarstaan.' },
+            { t: 'Challenges doorlopen', d: 'Stap voor stap werken, alleen of samen, met overzicht van wat nog moet.' },
+            { t: 'Feedback ontvangen', d: 'Je coach reageert tijdens het werk, direct bij de opdracht.' }
           ]
         },
         coach: {
+          image: 'Coach.png',
+          alt: 'LEO-kalender met challenges en deadlines',
           steps: [
-            { t: 'Groepen indelen', d: 'Stel groepen samen per klas, project of niveau en wijs challenges toe met een paar klikken.',
-              card: '<div class="hc-label">GROEPEN</div><div class="hc-title">Klas 3B indelen</div>' +
-                '<div class="hc-item"><i class="hc-dot hc-dot-green"></i>Groep 1 &middot; Noor, Daan, Sara<span>3 leerlingen</span></div>' +
-                '<div class="hc-item"><i class="hc-dot hc-dot-green"></i>Groep 2 &middot; Milan, Finn<span>2 leerlingen</span></div>' +
-                '<div class="hc-item is-active"><i class="hc-dot hc-dot-blue"></i>Nog niet ingedeeld<span>4 leerlingen</span></div>' +
-                '<div class="hc-note">Wijs daarna een challenge toe aan elke groep.</div>' },
-            { t: 'Voortgang volgen', d: 'Eén overzicht per groep: wie is klaar, wie is bezig, wie heeft hulp nodig.',
-              card: '<div class="hc-label">KLAS 3B &middot; PITCH JE IDEE</div><div class="hc-title">Voortgang</div>' +
-                '<div class="hc-row"><span>Noor</span><div class="hc-bar"><div style="width:85%"></div></div><b class="hc-tag hc-tag-green">Klaar</b></div>' +
-                '<div class="hc-row"><span>Daan</span><div class="hc-bar"><div style="width:60%"></div></div><b class="hc-tag hc-tag-blue">Bezig</b></div>' +
-                '<div class="hc-row"><span>Ilana</span><div class="hc-bar"><div style="width:40%"></div></div><b class="hc-tag hc-tag-orange">Hulp</b></div>' +
-                '<div class="hc-row"><span>Milan</span><div class="hc-bar"><div style="width:70%"></div></div><b class="hc-tag hc-tag-blue">Bezig</b></div>' },
-            { t: 'Feedback geven', d: 'Reageer tijdens het proces, niet pas als het werk af is.',
-              card: '<div class="hc-label">FEEDBACK GEVEN &middot; ILANA</div><div class="hc-title">Pitch je idee</div>' +
-                '<div class="hc-quote">&ldquo;Denk eens aan jullie pitch. Kijk nog eens naar stap 3: wie is jullie doelgroep?&rdquo;</div>' +
-                '<div class="hc-note">Verstuur naar Ilana</div>' }
+            { t: 'Groepen indelen', d: 'Stel groepen samen per klas, project of niveau en wijs challenges toe met een paar klikken.' },
+            { t: 'Voortgang volgen', d: 'Eén overzicht per groep: wie is klaar, wie is bezig, wie heeft hulp nodig.' },
+            { t: 'Feedback geven', d: 'Reageer tijdens het proces, niet pas als het werk af is.' }
           ]
         }
       };
 
       var stepsEl = document.getElementById('how-steps');
-      var cardEl = document.getElementById('how-card');
+      var shotEl = document.getElementById('how-shot');
       var toggles = document.querySelectorAll('.how-toggle-btn');
       var role = 'leerling', active = 0;
+      new Image().src = DATA.coach.image; // alvast laden zodat wisselen direct gaat
 
       function render() {
         var steps = DATA[role].steps;
@@ -355,8 +334,9 @@
           li.appendChild(btn);
           stepsEl.appendChild(li);
         });
-        cardEl.innerHTML = '<div class="hc-head"><span class="hc-logo">L</span>' +
-          (role === 'leerling' ? 'LEO<em>Noor &middot; 3B</em>' : 'LEO Coach') + '</div>' + steps[active].card;
+        var data = DATA[role];
+        if (shotEl.getAttribute('src') !== data.image) shotEl.src = data.image;
+        shotEl.alt = data.alt;
       }
 
       toggles.forEach(function (b) {
