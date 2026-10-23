@@ -274,7 +274,7 @@ body {
   background: #ffffff;
   padding: clamp(64px, 12vh, 140px) var(--page-gutter) clamp(24px, 4vh, 48px);
   display: flex;
-  justify-content: flex-start; /* zelfde linkerlijn als "Onze producten" */
+  justify-content: center;
 }
 
 .manifesto-inner {
@@ -282,7 +282,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   gap: clamp(32px, 6vw, 96px);
-  max-width: 1400px; /* gelijk aan .products-inner */
+  max-width: 1200px; /* gelijk aan .products-inner en .news-inner */
   width: 100%;
 }
 
@@ -345,11 +345,11 @@ body {
   background: #ffffff;
   padding: clamp(24px, 4vh, 48px) var(--page-gutter) clamp(64px, 12vh, 140px);
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .products-inner {
-  max-width: 1400px;
+  max-width: 1200px; /* gelijk aan .manifesto-inner en .news-inner */
   width: 100%;
 }
 
@@ -363,7 +363,7 @@ body {
 }
 
 .products-title {
-  font-size: clamp(2.3rem, 9vw, 5.5rem);
+  font-size: clamp(1.9rem, 5vw, 3rem);
   font-weight: 800;
   color: #10233F;
   line-height: 1;
