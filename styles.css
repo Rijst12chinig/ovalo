@@ -895,13 +895,6 @@ body {
   color: #0D1220;
 }
 
-/* Voor wie: foto als achtergrond met een witte laag voor leesbaarheid (vast aan het scherm, zoals ECO/BoekAI) */
-.docs-page.voorwie-page {
-  background:
-    linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)) fixed,
-    url("meisje.webp") fixed center / cover no-repeat #ffffff;
-}
-
 .docs-header {
   position: sticky;
   top: 0;
