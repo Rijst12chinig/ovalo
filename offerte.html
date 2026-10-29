@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Offerte aanvragen | Ovalo</title>
+<meta name="description" content="Vraag een offerte op maat aan voor LEO, ECO Game, BoekAI of Ovalo Advies. Vertel ons hoeveel leerlingen en welke programma's, dan maken we een voorstel.">
+<link rel="icon" type="image/png" href="ovalo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=45">
+</head>
+<body class="docs-page">
+  <header class="docs-header">
+    <a class="docs-brand" href="index.html" aria-label="Ovalo home">ovalo</a>
+    <nav class="docs-nav" aria-label="Hoofdmenu">
+      <a class="docs-nav-link" href="index.html">Home</a>
+      <a class="docs-nav-link" href="index.html#producten">Producten</a>
+      <a class="docs-nav-link" href="docs.html">Docs</a>
+      <a class="docs-nav-link" href="over-ons.html">Over ons</a>
+      <a class="docs-nav-link" href="voor-wie.html">Voor wie</a>
+      <a class="docs-nav-link" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="docs-hero contact-hero">
+      <span class="docs-eyebrow">OVALO &middot; OFFERTE</span>
+      <h1 class="docs-hero-title">Vraag een offerte aan</h1>
+      <p class="docs-hero-lead">Elke school is anders. Vertel ons wat u zoekt, dan maken we een voorstel dat past bij uw aantal leerlingen en programma's.</p>
+    </section>
+
+    <section class="contact-layout" aria-label="Offerte aanvragen">
+      <div class="contact-info">
+        <div class="contact-block">
+          <span class="contact-label">Reactietijd</span>
+          <span class="contact-value">Binnen twee werkdagen een offerte op maat</span>
+        </div>
+        <div class="contact-block">
+          <span class="contact-label">Prijs</span>
+          <span class="contact-value">Per school per schooljaar, zonder losse kosten per account</span>
+        </div>
+        <div class="contact-block">
+          <span class="contact-label">Vragen</span>
+          <a class="contact-value" href="mailto:info@ovalo.digital">info@ovalo.digital</a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <form class="contact-form" id="offerte-form" novalidate>
+          <label class="demo-field"><span>Naam school</span>
+            <input type="text" name="School" placeholder="Bijv. Agora Roermond" autocomplete="organization" required>
+          </label>
+          <label class="demo-field"><span>Uw naam</span>
+            <input type="text" name="Naam" placeholder="Uw naam" autocomplete="name" required>
+          </label>
+          <label class="demo-field"><span>E-mailadres</span>
+            <input type="email" name="email" placeholder="naam@school.nl" autocomplete="email" required>
+          </label>
+          <label class="demo-field"><span>Telefoonnummer</span>
+            <input type="tel" name="telefoon" placeholder="Optioneel" autocomplete="tel">
+          </label>
+          <label class="demo-field"><span>Uw rol</span>
+            <select name="Rol">
+              <option>Schoolleider of directeur</option>
+              <option>Coach of docent</option>
+              <option>ICT-coördinator</option>
+              <option>Bestuur</option>
+              <option>Anders</option>
+            </select>
+          </label>
+          <label class="demo-field"><span>Aantal leerlingen (schatting)</span>
+            <input type="number" name="leerlingen" min="1" inputmode="numeric" placeholder="Bijv. 250">
+          </label>
+          <fieldset class="demo-field offerte-programmas">
+            <legend><span>Welke programma's?</span></legend>
+            <div class="offerte-opts">
+              <label><input type="checkbox" name="Programma" value="LEO" checked> LEO</label>
+              <label><input type="checkbox" name="Programma" value="ECO Game"> ECO Game</label>
+              <label><input type="checkbox" name="Programma" value="BoekAI"> BoekAI</label>
+              <label><input type="checkbox" name="Programma" value="Ovalo Advies"> Ovalo Advies</label>
+            </div>
+          </fieldset>
+          <label class="demo-field"><span>Waar loopt uw school tegenaan?</span>
+            <textarea name="Bericht" rows="4" placeholder="Bijv. we willen voortgang op vaardigheden beter zichtbaar maken."></textarea>
+          </label>
+          <input type="text" name="botcheck" class="demo-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="demo-submit" type="submit">Offerte aanvragen</button>
+          <p class="demo-status" id="offerte-status" role="status" aria-live="polite"></p>
+          <p class="offerte-note">We gebruiken uw gegevens alleen om contact met u op te nemen. Zie ons privacybeleid op de <a href="contact.html">contactpagina</a>.</p>
+        </form>
+        <div class="demo-success" id="offerte-success" hidden>
+          <div class="demo-check" aria-hidden="true">&#10003;</div>
+          <h3>Bedankt voor uw aanvraag</h3>
+          <p>We nemen binnen twee werkdagen contact met u op over de offerte.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="offerte-faq" aria-labelledby="offerte-faq-title">
+      <h2 class="offerte-faq-title" id="offerte-faq-title">Veelgestelde vragen</h2>
+      <details>
+        <summary>Wat bepaalt de prijs?</summary>
+        <p>Het aantal leerlingen, welke programma's u kiest en of u begeleiding of advies wilt bij de invoering. U betaalt per school per schooljaar, zonder losse kosten per account.</p>
+      </details>
+      <details>
+        <summary>Zit de koppeling met Entree of Microsoft in de prijs?</summary>
+        <p>Ja. Inloggen via Entree of uw Microsoft-schoolaccount is bij elk programma inbegrepen.</p>
+      </details>
+      <details>
+        <summary>Kunnen we eerst klein beginnen?</summary>
+        <p>Ja. U kunt starten met één groep en één coach. Werkt het, dan breidt u uit naar de hele school.</p>
+      </details>
+      <details>
+        <summary>Krijgen we ook een verwerkersovereenkomst?</summary>
+        <p>Ja, die sturen we mee met de offerte. Vraag ze vooraf op via <a href="mailto:info@ovalo.digital">info@ovalo.digital</a>.</p>
+      </details>
+      <details>
+        <summary>Hoe snel kunnen we starten?</summary>
+        <p>Meestal binnen twee tot drie weken na akkoord, inclusief het instellen van de koppeling en een korte uitleg voor de coaches.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img class="footer-logo" src="ovalo.png" alt="Ovalo logo">
+          <p class="footer-tagline">Softwarebedrijf voor scholen die hun leerlingen voorbereiden op de wereld van morgen.</p>
+        </div>
+
+        <nav class="footer-col" aria-label="Producten">
+          <h2 class="footer-heading">Producten</h2>
+          <ul>
+            <li><a href="leo.html">LEO</a></li>
+            <li><a href="eco-game.html">ECO Game</a></li>
+            <li><a href="boekai.html">BoekAI</a></li>
+            <li><a href="advies.html">Ovalo Advies</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Ovalo">
+          <h2 class="footer-heading">Ovalo</h2>
+          <ul>
+            <li><a href="docs.html">Docs</a></li>
+            <li><a href="over-ons.html">Over ons</a></li>
+            <li><a href="voor-wie.html">Voor wie</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Contact">
+          <h2 class="footer-heading">Contact</h2>
+          <ul>
+            <li><span>info@ovalo.digital</span></li>
+            <li><span>0629772049</span></li>
+            <li><span>Nederland</span></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <span class="footer-copy">&copy; 2026 Ovalo</span>
+        <span class="footer-slogan">SAMEN TOT DE TOP</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      // Zelfde Web3Forms-sleutel als het contactformulier op contact.html
+      var ACCESS_KEY = 'ec61d246-643e-48ca-af76-3aacbaff61f1';
+      var form = document.getElementById('offerte-form');
+      var statusEl = document.getElementById('offerte-status');
+      var success = document.getElementById('offerte-success');
+      var submit = form.querySelector('.demo-submit');
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        statusEl.className = 'demo-status';
+        statusEl.textContent = '';
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+        var payload = {};
+        var programmas = [];
+        new FormData(form).forEach(function (v, k) {
+          if (k === 'Programma') programmas.push(v);
+          else payload[k] = v;
+        });
+        if (payload.botcheck) return;
+        delete payload.botcheck;
+        payload.Programma = programmas.join(', ') || 'Geen gekozen';
+        payload.access_key = ACCESS_KEY;
+        payload.subject = 'Offerte-aanvraag van ' + payload.School + ' (' + payload.Naam + ')';
+        payload.from_name = 'Ovalo website';
+
+        submit.disabled = true;
+        submit.textContent = 'Versturen…';
+        fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(payload)
+        }).then(function (r) {
+          return r.json().then(function (j) { return { ok: r.ok && String(j.success) !== 'false', j: j }; });
+        }).then(function (res) {
+          if (!res.ok) throw new Error(res.j && res.j.message || 'Versturen mislukt');
+          form.hidden = true;
+          success.hidden = false;
+        }).catch(function () {
+          statusEl.className = 'demo-status is-error';
+          statusEl.innerHTML = 'Versturen is niet gelukt. Probeer het opnieuw of mail naar <a href="mailto:info@ovalo.digital">info@ovalo.digital</a>.';
+          submit.disabled = false;
+          submit.textContent = 'Offerte aanvragen';
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
