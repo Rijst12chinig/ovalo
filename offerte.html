@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=45">
+<link rel="stylesheet" href="styles.css?v=44">
 </head>
 <body class="docs-page">
   <header class="docs-header">
@@ -25,56 +25,46 @@
   </header>
 
   <main>
-    <section class="docs-hero contact-hero">
+    <section class="offerte-page">
       <span class="docs-eyebrow">OVALO &middot; OFFERTE</span>
-      <h1 class="docs-hero-title">Vraag een offerte aan</h1>
-      <p class="docs-hero-lead">Elke school is anders. Vertel ons wat u zoekt, dan maken we een voorstel dat past bij uw aantal leerlingen en programma's.</p>
-    </section>
+      <h1 class="offerte-title">Vraag een offerte aan</h1>
+      <p class="offerte-lead">Elke school is anders. Vertel ons wat u zoekt, dan maken we een voorstel dat past bij uw aantal leerlingen en programma's.</p>
 
-    <section class="contact-layout" aria-label="Offerte aanvragen">
-      <div class="contact-info">
-        <div class="contact-block">
-          <span class="contact-label">Reactietijd</span>
-          <span class="contact-value">Binnen twee werkdagen een offerte op maat</span>
-        </div>
-        <div class="contact-block">
-          <span class="contact-label">Prijs</span>
-          <span class="contact-value">Per school per schooljaar, zonder losse kosten per account</span>
-        </div>
-        <div class="contact-block">
-          <span class="contact-label">Vragen</span>
-          <a class="contact-value" href="mailto:info@ovalo.digital">info@ovalo.digital</a>
-        </div>
-      </div>
+      <div class="offerte-card">
+        <form class="offerte-form" id="offerte-form" novalidate>
+          <div class="offerte-row">
+            <label class="offerte-field"><span>Naam school</span>
+              <input type="text" name="School" placeholder="Bijv. Agora Roermond" autocomplete="organization" required>
+            </label>
+            <label class="offerte-field"><span>Uw naam</span>
+              <input type="text" name="Naam" autocomplete="name" required>
+            </label>
+          </div>
+          <div class="offerte-row">
+            <label class="offerte-field"><span>E-mailadres</span>
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+            <label class="offerte-field"><span>Telefoonnummer</span>
+              <input type="tel" name="telefoon" autocomplete="tel">
+            </label>
+          </div>
+          <div class="offerte-row">
+            <label class="offerte-field"><span>Uw rol</span>
+              <select name="Rol">
+                <option>Schoolleider of directeur</option>
+                <option>Coach of docent</option>
+                <option>ICT-coördinator</option>
+                <option>Bestuur</option>
+                <option>Anders</option>
+              </select>
+            </label>
+            <label class="offerte-field"><span>Aantal leerlingen (schatting)</span>
+              <input type="number" name="leerlingen" min="1" inputmode="numeric" placeholder="Bijv. 250">
+            </label>
+          </div>
 
-      <div class="contact-card">
-        <form class="contact-form" id="offerte-form" novalidate>
-          <label class="demo-field"><span>Naam school</span>
-            <input type="text" name="School" placeholder="Bijv. Agora Roermond" autocomplete="organization" required>
-          </label>
-          <label class="demo-field"><span>Uw naam</span>
-            <input type="text" name="Naam" placeholder="Uw naam" autocomplete="name" required>
-          </label>
-          <label class="demo-field"><span>E-mailadres</span>
-            <input type="email" name="email" placeholder="naam@school.nl" autocomplete="email" required>
-          </label>
-          <label class="demo-field"><span>Telefoonnummer</span>
-            <input type="tel" name="telefoon" placeholder="Optioneel" autocomplete="tel">
-          </label>
-          <label class="demo-field"><span>Uw rol</span>
-            <select name="Rol">
-              <option>Schoolleider of directeur</option>
-              <option>Coach of docent</option>
-              <option>ICT-coördinator</option>
-              <option>Bestuur</option>
-              <option>Anders</option>
-            </select>
-          </label>
-          <label class="demo-field"><span>Aantal leerlingen (schatting)</span>
-            <input type="number" name="leerlingen" min="1" inputmode="numeric" placeholder="Bijv. 250">
-          </label>
-          <fieldset class="demo-field offerte-programmas">
-            <legend><span>Welke programma's?</span></legend>
+          <fieldset class="offerte-programmas">
+            <legend>Welke programma's?</legend>
             <div class="offerte-opts">
               <label><input type="checkbox" name="Programma" value="LEO" checked> LEO</label>
               <label><input type="checkbox" name="Programma" value="ECO Game"> ECO Game</label>
@@ -82,13 +72,17 @@
               <label><input type="checkbox" name="Programma" value="Ovalo Advies"> Ovalo Advies</label>
             </div>
           </fieldset>
-          <label class="demo-field"><span>Waar loopt uw school tegenaan?</span>
+
+          <label class="offerte-field"><span>Waar loopt uw school tegenaan?</span>
             <textarea name="Bericht" rows="4" placeholder="Bijv. we willen voortgang op vaardigheden beter zichtbaar maken."></textarea>
           </label>
+
           <input type="text" name="botcheck" class="demo-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
-          <button class="demo-submit" type="submit">Offerte aanvragen</button>
+          <div class="offerte-actions">
+            <button class="offerte-submit" type="submit">Offerte aanvragen &rarr;</button>
+            <p class="offerte-note">We gebruiken uw gegevens alleen om contact met u op te nemen.</p>
+          </div>
           <p class="demo-status" id="offerte-status" role="status" aria-live="polite"></p>
-          <p class="offerte-note">We gebruiken uw gegevens alleen om contact met u op te nemen. Zie ons privacybeleid op de <a href="contact.html">contactpagina</a>.</p>
         </form>
         <div class="demo-success" id="offerte-success" hidden>
           <div class="demo-check" aria-hidden="true">&#10003;</div>
@@ -96,30 +90,30 @@
           <p>We nemen binnen twee werkdagen contact met u op over de offerte.</p>
         </div>
       </div>
-    </section>
 
-    <section class="offerte-faq" aria-labelledby="offerte-faq-title">
-      <h2 class="offerte-faq-title" id="offerte-faq-title">Veelgestelde vragen</h2>
-      <details>
-        <summary>Wat bepaalt de prijs?</summary>
-        <p>Het aantal leerlingen, welke programma's u kiest en of u begeleiding of advies wilt bij de invoering. U betaalt per school per schooljaar, zonder losse kosten per account.</p>
-      </details>
-      <details>
-        <summary>Zit de koppeling met Entree of Microsoft in de prijs?</summary>
-        <p>Ja. Inloggen via Entree of uw Microsoft-schoolaccount is bij elk programma inbegrepen.</p>
-      </details>
-      <details>
-        <summary>Kunnen we eerst klein beginnen?</summary>
-        <p>Ja. U kunt starten met één groep en één coach. Werkt het, dan breidt u uit naar de hele school.</p>
-      </details>
-      <details>
-        <summary>Krijgen we ook een verwerkersovereenkomst?</summary>
-        <p>Ja, die sturen we mee met de offerte. Vraag ze vooraf op via <a href="mailto:info@ovalo.digital">info@ovalo.digital</a>.</p>
-      </details>
-      <details>
-        <summary>Hoe snel kunnen we starten?</summary>
-        <p>Meestal binnen twee tot drie weken na akkoord, inclusief het instellen van de koppeling en een korte uitleg voor de coaches.</p>
-      </details>
+      <div class="offerte-faq">
+        <h2 class="offerte-faq-title">Veelgestelde vragen</h2>
+        <details>
+          <summary>Wat bepaalt de prijs?</summary>
+          <p>Het aantal leerlingen, welke programma's u kiest en of u begeleiding of advies wilt bij de invoering. U betaalt per school per schooljaar, zonder losse kosten per account.</p>
+        </details>
+        <details>
+          <summary>Zit de koppeling met Entree of Microsoft in de prijs?</summary>
+          <p>Ja. Inloggen via Entree of uw Microsoft-schoolaccount is bij elk programma inbegrepen.</p>
+        </details>
+        <details>
+          <summary>Kunnen we eerst klein beginnen?</summary>
+          <p>Ja. U kunt starten met één groep en één coach. Werkt het, dan breidt u uit naar de hele school.</p>
+        </details>
+        <details>
+          <summary>Krijgen we ook een verwerkersovereenkomst?</summary>
+          <p>Ja, die sturen we mee met de offerte. Vraag ze vooraf op via <a href="mailto:info@ovalo.digital">info@ovalo.digital</a>.</p>
+        </details>
+        <details>
+          <summary>Hoe snel kunnen we starten?</summary>
+          <p>Meestal binnen twee tot drie weken na akkoord, inclusief het instellen van de koppeling en een korte uitleg voor de coaches.</p>
+        </details>
+      </div>
     </section>
   </main>
 
@@ -175,7 +169,7 @@
       var form = document.getElementById('offerte-form');
       var statusEl = document.getElementById('offerte-status');
       var success = document.getElementById('offerte-success');
-      var submit = form.querySelector('.demo-submit');
+      var submit = form.querySelector('.offerte-submit');
 
       form.addEventListener('submit', function (e) {
         e.preventDefault();
@@ -214,7 +208,7 @@
           statusEl.className = 'demo-status is-error';
           statusEl.innerHTML = 'Versturen is niet gelukt. Probeer het opnieuw of mail naar <a href="mailto:info@ovalo.digital">info@ovalo.digital</a>.';
           submit.disabled = false;
-          submit.textContent = 'Offerte aanvragen';
+          submit.innerHTML = 'Offerte aanvragen &rarr;';
         });
       });
     })();
