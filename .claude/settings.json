@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && if [ -n \"$(git status --porcelain)\" ]; then git add -A && git commit -q -m \"Update website\" -m \"Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>\"; fi; git push -q origin main 2>&1 | tail -3"
+          }
+        ]
+      }
+    ]
+  }
+}
