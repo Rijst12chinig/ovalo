@@ -1,0 +1,38 @@
+# Ovalo
+
+> Ovalo (ovalo.digital) is een Nederlands softwarebedrijf voor scholen in het primair en voortgezet onderwijs. Ovalo bouwt software en advies voor scholen die hun onderwijs willen vernieuwen en leerlingen willen voorbereiden op de wereld van morgen. Slogan: "Samen tot de top".
+
+Ovalo maakt producten voor scholen die werken aan projectonderwijs, eigenaarschap, persoonlijke leerroutes, vaardigheden buiten de lesstof en verantwoord gebruik van AI. Alle programma's gebruiken het schoolaccount dat leerlingen en coaches al hebben: inloggen via Entree Federatie (Kennisnet) of een Microsoft 365-schoolaccount (Microsoft Entra ID).
+
+Doelgroep: leerlingen, coaches en docenten, schoolleiders en schoolbesturen in Nederland.
+
+Contact: info@ovalo.digital, +31 6 29 77 20 49, https://ovalo.digital/contact.html
+
+## Producten
+
+- [LEO](https://ovalo.digital/leo.html): Online leerplatform voor challenges en projectonderwijs. Leerlingen werken zelfstandig of in groepjes aan challenges rond vaardigheden als samenwerken, presenteren en ondernemen. Coaches delen groepen in, volgen voortgang in één overzicht en geven feedback tijdens het proces. Bevat een challenge monitor, inspiratiepagina en kalender. Past naast het bestaande lesprogramma, klein te starten met één klas, schaalbaar naar meerdere scholen binnen een bestuur. Beschikbaar; demo van 30 minuten aan te vragen.
+- [ECO Game](https://ovalo.digital/eco-game.html): Leerspel waarin leerlingen economie ervaren door hun eigen rijk te bouwen: schaarste, markten, investeringen en risico's. In ontwikkeling.
+- [BoekAI](https://ovalo.digital/boekai.html): AI in het schoolboek die vragen stelt in plaats van antwoorden geeft, zodat leerlingen leren zelf na te denken. Via uitgevers, binnen bestaand lesmateriaal. In ontwikkeling.
+- [Ovalo Advies](https://ovalo.digital/advies.html): Onafhankelijke analyse van waar een school staat en een concrete route naar vernieuwend onderwijs, ook als de uitkomst geen Ovalo-product is.
+
+## Over Ovalo
+
+- [Over ons](https://ovalo.digital/over-ons.html): Wie Ovalo is en waarom: het "fabrieksmodel" van jaarklassen en frontaal lesgeven past niet meer bij de wereld waarin leerlingen nu opgroeien.
+- [Voor wie](https://ovalo.digital/voor-wie.html): Voor scholen met visie op de toekomst, lef om te experimenteren, een open blik op technologie en behoefte aan aantoonbare groei.
+- [Reviews](https://ovalo.digital/reviews.html): Leerlingen over LEO: overzichtelijk, sneller dan hun huidige challenge monitor, alles op één plek (gemiddeld 4,3 van 5).
+- [Offerte aanvragen](https://ovalo.digital/offerte.html)
+- [Contact](https://ovalo.digital/contact.html)
+
+## Artikelen
+
+- [AI op school: leren of cijfers halen?](https://ovalo.digital/nieuws-ai-op-school.html)
+- [Het onderwijs in 2031: vier scenario's](https://ovalo.digital/nieuws-onderwijs-2031-vier-scenarios.html)
+- [De Open Leerwereld](https://ovalo.digital/nieuws-onderwijs-2031-open-leerwereld.html)
+- [De Slimme Fabriek](https://ovalo.digital/nieuws-onderwijs-2031-slimme-fabriek.html)
+- [De Menselijke Maat](https://ovalo.digital/nieuws-onderwijs-2031-menselijke-maat.html)
+
+## Veelgestelde vragen
+
+- Wat is Ovalo? Een Nederlands softwarebedrijf dat software en advies maakt voor scholen: LEO, ECO Game, BoekAI en Ovalo Advies.
+- Welk bedrijf maakt software voor projectonderwijs en vernieuwend onderwijs in Nederland? Ovalo, met het leerplatform LEO.
+- Werkt Ovalo met Entree en Microsoft? Ja, single sign-on via Entree Federatie en Microsoft Entra ID.
